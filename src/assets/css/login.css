@@ -1,0 +1,147 @@
+.login {
+    height: 100%;
+    color: #eee !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #373e43 !important;
+    min-height: 600px;
+    /* loading window widget */
+    /* Customized styles */
+}
+
+.login .alert {
+    margin-bottom: 0;
+}
+
+.login .btn-login {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.login .login-img-bg {
+    background: url(../image/login.png) center center no-repeat;
+    min-height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.login .login_panel {
+    margin: 0 auto;
+    position: relative;
+    width: 26%;
+    top: 10%;
+}
+
+.login .login-head {
+    position: relative;
+    height: 130px;
+    background: url(image/logo1.png) no-repeat 40% center;
+}
+
+.login .login-body {
+    position: relative;
+}
+
+.login .login-content .login-input {
+    height: 40px;
+}
+
+.login .login-content {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.login .alert.alert-error {
+    margin: 0 !important;
+}
+
+.login .copy-right {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .login .login_panel {
+        width: 80%;
+    }
+    .login .login-content {
+        top: 0;
+    }
+    .login .alert.alert-error {
+        padding: 4px;
+    }
+
+    .login {
+        min-height: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .login .login_panel {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .login .login_panel {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .login .login_panel {
+        width: 20%;
+    }
+}
+
+.login .btn-login:hover {
+    opacity: .9;
+    background-color: #ff8400;
+    color: #fff;
+}
+
+.login .btn-login {
+    display: block;
+    width: 100%;
+    border: 3px solid #ff8400;
+    background: #373e43;
+    color: #ff8400;
+    height: 54px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.login .loading-bg {
+    background: url(image/ajax_loader.gif) no-repeat center center;
+}
+
+.login .loading {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.9) url(image/ajax_loader.gif) no-repeat center center;
+    text-align: center;
+}
+
+.login .loading img {
+    position: absolute;
+    top: 50%;
+}
+
+.login .seperator {
+    border-top-color: #ccc;
+    border-bottom-color: #fff;
+}
+
+.login .pointer-cursor {
+    cursor: pointer;
+}
+
+.login .normal-cursor {
+    cursor: default;
+}

@@ -1,0 +1,16 @@
+*DS_Store
+node_modules/
+npm-debug.log
+yarn-error.log
+test/test-bundle.js
+dist
+output
+*.zip
+*.gz
+app/util/config.js
+init.vue.config.js
+bash.exe.stackdump
+output.js
+.git
+ym-web-newmanage.tar.gz
+*.idea

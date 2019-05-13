@@ -1,0 +1,16 @@
+AddType text/html .shtml .html
+AddOutputFilter INCLUDES .shtml .html
+Options +Includes
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$  /index.html [L]
+
+
+RewriteRule ^/?(.*).html$  index.html

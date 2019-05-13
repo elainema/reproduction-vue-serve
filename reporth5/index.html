@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Report</title>
+    <style>
+        input,button,select,textarea{outline:none}
+        textarea{resize:none}
+        input,textarea {
+            -webkit-user-select: auto!important;
+            -khtml-user-select: auto!important;
+            -moz-user-select: auto!important;
+            -ms-user-select: auto!important;
+            -o-user-select: auto!important;
+            user-select: auto!important;
+        }
+    </style>
+</head>
+<body>
+<div class="loading_bg" id="loading">
+    <div class="loading_wrp">
+        <div class="loading">
+            <div class="loading_bar"></div>
+        </div>
+        <b id="loading_text">0%</b>
+    </div>
+</div>
+<div class="lock_wrp" id="lock">
+    <div class="lock">
+        <i></i><br />
+        为了更好的体验请使用竖屏
+    </div>
+</div>
+<div class="wrapper">
+    <section class="sec0">
+        <div class="logo"></div>
+    </section>
+    <section class="sec1">
+        <div class="h_wrp">
+            <h1> <span>Data</br>Report for</br></span><i class="advName">Zoomobile</i></h1>
+            <p>2017/1/1 - 2/1</p>
+            <p>All data are based on Yeahmobi system</p>
+            <i class="up"></i>
+        </div>
+    </section>
+    <section class="sec2 back_bg" id="product">
+        <div class="h_wrp">
+            <h2>Data of campaigns</h2>
+            <ul class="total">
+                <li><span class="styleTol" style="margin-top:-1.8rem">Volume of camapigns</span>  <span class="styleTol">Total cost</span> <span class="styleTol">Conversions</span></li>
+                <li><span class="styleTol p_num">11</span>  <span class="styleTol total_cost">5666</span> <span class="styleTol conversion">4646</span></li>
+            </ul>
+            <div class="chartDiv" id="chart0"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec3 back_bg" id="affiliate">
+        <div class="h_wrp">
+            <h2>About Publishers</h2>
+            <div class="chartDiv" id="chart1"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec4 back_bg" id="country">
+        <div class="h_wrp">
+            <h2>About Geos</h2>
+            <div class="chartDiv" id="chart2"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec5 back_bg" id="platform">
+        <div class="h_wrp">
+            <h2>Platform Targeting</h2>
+            <div class="chartDiv" id="chart3"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec6 back_bg" id="os_ios">
+        <div class="h_wrp">
+            <h2>iOS System Version</h2>
+            <div class="chartDiv" id="chart4"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec7 back_bg" id="os_android">
+        <div class="h_wrp">
+            <h2>Andriod System Version</h2>
+            <div class="chartDiv" id="chart5"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec8 back_bg" id="brand">
+        <div class="h_wrp">
+            <h2>Device Brand</h2>
+            <div class="chartDiv" id="chart6"></div>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec9 back_bg" id="quality">
+        <div class="h_wrp">
+            <h2>Quality Ratio</h2>
+            <div class="contentDiv" id="chart7" style="top:4rem">
+                <ul></ul>
+            </div>
+            <p class="notes">Reaction period. means once the fraud traffic have been found, how long the affiliate will be paused.</p>
+            <div class="comment">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec10 back_bg">
+        <div class="h_wrp">
+            <h2><img src="images/logo.png" class="logo" /></h2>
+            <div>
+                <form class="tell-us">
+                    <p>Leave message to us:</p>
+                    <textarea rows="4" name="advice"></textarea>
+                    <a class="submit">Send</a>
+                </form>
+                <ul class="link">
+                    <li><a href="https://www.facebook.com/yeahmobi.co" target="_blank"><span class="facebook"></span><i>Facebook</i></a></li>
+                    <li><a href="https://twitter.com/YeahmobiInc" target="_blank"><span class="twitter"></span><i>Twitter</i></a></li>
+                    <li><a href="http://www.linkedin.com/company/yeahmobi" target="_blank"><span class="linkedin"></span><i>Linkedin</i></a></li>
+                </ul>
+                <div id="code"></div>
+                <a class="again" id="home">Look again</a>
+                <span class="bottom-check">Copyright &copy; 2018 Yeahmobi.com | All Rights  Reserved</span>
+                <div class="shadow">
+                    <span class="correct">&radic;</span>
+                    <div class="ticks">
+                        <p>Sent successfully</p>
+                        <p>Thanks for your feedback!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<style>
+</style>
+<script src="js/zepto.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/world.js"></script>
+<script src="js/global.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

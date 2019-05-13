@@ -1,0 +1,22 @@
+@import '~@css/_var.less';
+
+// button
+.el-button--primary {
+  color: #fff !important;
+  background-color: @btnHoverColor !important;
+  border-color: @btnHoverColor !important;
+	&.active, &:hover{
+    background-color: #f70!important;
+    border-color: #f70!important;
+    box-shadow: none;
+	}
+}
+.el-button.is-disabled{
+    background-color: #f6cda8 !important;
+    border-color: #f6cda8 !important;
+    color: #fdf2ea !important;
+}
+.middle{
+  display: flex;
+  align-items: center;
+}

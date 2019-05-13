@@ -1,0 +1,66 @@
+@import '~@css/_var.less';
+.el-dialog__wrapper{
+  text-align: center;
+}
+.el-dialog{
+    display: inline-block;
+    text-align: left;
+}
+@media (min-width: 768px){
+  .el-dialog {
+    margin: 30px auto !important;
+  }
+}
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.el-dialog__header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 6px 6px 0 0;
+}
+.el-button:focus, .el-button:hover {
+  border-color: @btnHoverColor;
+  background-color: @btnHoverColor;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  color: #000;
+}
+.el-button--default {
+  &.active, &:hover{
+    background-color: #fff!important;
+    border-color: @btnHoverColor !important;
+    box-shadow: none;
+    color: #333 !important;
+  }
+  &:focus {
+    border-color: @btnHoverColor;
+    background-color: @btnHoverColor;
+    outline: 0;
+    color: #fff;
+  }
+}
+.el-dialog__headerbtn{
+  top:10px;
+  .el-dialog__close:focus,.el-dialog__close:hover{
+    color: #aaa;
+  }
+}
+.el-dialog__footer {
+  padding: 15px;    
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #e5e5e5;
+  .el-button--primary,.el-button{
+    padding: 7px 12px;
+    order: 1;
+  }
+  .el-button{
+    margin: 0 5px
+  }
+}
